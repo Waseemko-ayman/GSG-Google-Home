@@ -6,8 +6,8 @@ darkMode.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 
     if(body.classList.contains("dark-mode")) {
-        googleWord.src = "google word.png";
+        googleWord.src = "images/google word.png";
     } else {
-        googleWord.src = "google word white.png";
+        googleWord.src = "images/google word white.png";
     }
 });
