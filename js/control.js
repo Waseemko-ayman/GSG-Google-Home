@@ -14,3 +14,20 @@ darkMode.addEventListener("click", () => {
         appIcon.src = "images/appsIconWhite.png";
     }
 });
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+
+document.getElementById('search-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var searchInput = document.getElementById('search-input').value;
+    window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent(searchInput);
+});
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+
+let luckyButton = document.getElementById("lucky");
+luckyButton.addEventListener("click", () => {
+    window.open("https://www.google.com/doodles")
+})
